@@ -1,0 +1,275 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Start Navbar */
+.navbar {
+    background-color: #E6E6E6;
+}
+.navbar h1 {
+    font-size: 24;
+    font-weight: 900;
+    margin: 0 20px;
+}
+nav.navbar .navigation a:not(:last-child) {
+    color: black;
+    margin: 0 20px;
+    font-size: 18px;
+}
+.navbar .logo {
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+}
+.navigation :not(.navbutton):hover{
+    border-bottom: solid black;
+}
+.navbutton {
+    width: 105px;
+    height: 33px;
+    color: white;
+    background: #68AEFF;
+    padding: 6px 40px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
+    margin-right: 40px;
+}
+.navbutton:hover {
+    background-color: #127ee4ad;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* End of Navbar */
+
+/* Start Beranda */
+.beranda {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to right, rgba(104,174,255,1), rgba(196,196,196,0)), url(GAMBAR/Cover\ jamur.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.beranda img {
+    height: 382px;
+    width: 468px;
+    border-radius: 20px 0;
+    border: solid black;
+}
+.beranda .teks {
+    display: flex;
+    flex-direction: column;
+}
+.beranda a {
+    padding: 6px 40px;
+    border-radius: 15px;
+    color: white;
+    background: #127FE4;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
+    margin: auto;
+}
+.beranda a:hover {
+    background-color: #127ee4ad;
+}
+/* End of Beranda */
+
+/* Start Tentang */
+.tentang {
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)), url(GAMBAR/Cover\ jamur.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tentang .gambar img {
+    width: 500px;
+    height: 400px;
+}
+.tentang .logo {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.tentang .teks {
+    display: flex;
+    flex-direction: column;
+}
+.tentang p{
+    font-size: 24px;
+    text-align: justify;
+    width: 516px;
+    margin-bottom: 20px;
+}
+/* End of Tentang */
+
+/* Start Produk */
+.produk {
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(rgb(255, 255, 255), #68AEFF);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h3 {
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+}
+.produk img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px solid #2F80ED;
+}
+.produk .gambar {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.produk .gambar h4 {
+    font-size: 34px;
+    font-weight: 700;
+    margin: auto;
+    border-bottom: 3px solid black;
+}
+.produk .kategori {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.produk p {
+    font-size: 28px;
+    width: 970px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.produk a {
+    padding: 6px 40px;
+    border-radius: 15px;
+    color: white;
+    background: #127FE4;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
+    margin-left: auto;
+    margin-right: auto;
+}
+.produk a:hover {
+    background-color: #127ee4ad;
+}
+/* End of Produk */
+
+/* Start Kelebihan */
+.kelebihan {
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)), url(GAMBAR/Cover\ jamur.jpg);
+}
+.kelebihan h3{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.kelebihan .baris {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.kelebihan .gambar img {
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 0 200px;
+}
+.kelebihan .penjelasan {
+    width: 530px;
+    height: 140px;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+}
+.kelebihan .kiri {
+    margin: 20px;
+}
+.kelebihan .kanan {
+    display: flex;
+    flex-direction: column;
+}
+.kelebihan .kanan h5{
+    font-size: 24px;
+    font-weight: 900;
+}
+.kelebihan .kanan p{
+    font-size: 18px;
+}
+.kelebihan .penjelasan img {
+    width: 84px;
+    height: 84px;
+    border: 5px solid black;
+}
+/* End of Kelebihan */
+
+/* Start Kontak */
+.kontak {
+    height: 480px;
+    background-color: #3F3F3F;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+.kontak p {
+    margin-bottom: 20px;
+}
+.kontak .logo {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.kontak .simbol {
+    
+}
+.kontak .simbol .iconify{
+    width: 53px;
+    height: 53px;
+    margin-right: 30px;
+    color: #3F3F3F;
+    background-color: white;
+    border-radius: 50%;
+}
+footer {
+    font-size: 24px;
+    height: 125px;
+    color: white;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

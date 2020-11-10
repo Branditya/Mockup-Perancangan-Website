@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Daftar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        div.logo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px auto 10px auto;
+        }
+        .center-text {
+            text-align: center;
+        }
+        form {
+            width: 361px;
+            height: 450px;
+            background-color: #D6D4D4;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        form div label {
+            margin-left: 20px;
+        }
+        form div input {
+            display: flex;
+            width: 318px;
+            height: 30px;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            margin-bottom: 10px;
+        }
+        .submit {
+            background: #127FE4;
+            color: white;
+            font-size: 18px;
+            padding: 5px 0px;
+            width: 156px;
+            border-radius: 15px;
+            border: none;
+            font-weight: bold;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.281);
+            margin: 20px auto;
+        }
+        a:hover {
+            border-bottom: 2px solid #3593FF
+        }
+        input.submit:hover {
+            background-color: #127ee4ad;
+        }
+    </style>
+</head>
+<body style="background-color: #E7E6E6;">
+    <div class="container logo">
+        <img src="GAMBAR/EMJE MASRUM.png" alt="">
+        <h1 style="font-size: 24px;font-weight: 900; margin-top: 10px;">EMJE MUSHROOM</h1>
+    </div>
+    <form class="container" method="POST" action="data.php">
+        <div class="center-text">
+            <h2 style="font-family: 'Roboto Slab', serif;font-size: 36px; margin-bottom: 20px; padding-top: 15px;">Daftar</h2>
+            <p style="margin-bottom: 10px;">Sudah memiliki akun? <span><a style="color: #3593FF;" href="Masuk.html">Kuy Masuk</a></span></p>
+        </div>
+        
+        <div>
+            <label for="Nama">Nama</label><br>
+            <input type="text" placeholder="Masukkan Nama">
+            <label for="Email">Email</label><br>
+            <input type="email" placeholder="Masukkan Email">
+            <label for="Nomor Telepon">Nomor Telepon</label>
+            <input type="number" placeholder="Masukkan No Telepon">
+            <label for="Kata Sandi">Kata Sandi</label><br>
+            <input type="password" placeholder="Masukkan Kata Sandi">
+            <input class="submit" type="submit" value="DAFTAR">
+        </div>
+        
+    </form>
+    <p class="container center-text" style="margin: 20px auto;">© 2020 EMJE MUSHROOM, All Rights Reserved</p>
+</body>
+</html>
