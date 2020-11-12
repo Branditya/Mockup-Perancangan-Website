@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMJE MUSHROOM</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 24;
+            font-weight: 900;
+            margin: 0 20px;
+        }
+        h2 {
+            font-size: 71px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Start Nav -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="GAMBAR/EMJE MASRUM.png" alt="">
+                <h1>EMJE MUSHROOM</h1>
+            </div>
+            <div class="navigation">
+                <a href="index.html#beranda">BERANDA</a>
+                <a href="index.html#tentang">TENTANG KAMI</a>
+                <a href="index.html#produk">PRODUK</a>
+                <a href="index.html#kontak">KONTAK</a>
+                <a class="navbutton" href="Masuk.html">MASUK</a>
+            </div>  
+        </div> 
+    </nav>
+    <!-- End of Nav -->
+
+    <!-- Start Pembayaran -->
+    <div class="pembayaran container">
+        <div class="alamat">
+        <form  method="POST" action="proses.php">
+            <h1>Alamat Pengiriman</h1>
+            <div>    
+                <div>
+                    <label for="Nama Penerima">Nama Penerima</label><br>
+                    <input type="text" placeholder="Nama Penerima"><br>
+                    <label for="No. Handphone">No. Handphone</label><br>
+                    <input type="number" placeholder="No. Handphone"><br>
+                    <label for="Provinsi">Provinsi</label><br>
+                    <select name="Provinsi">Provinsi
+                        <option value="Pilih Provinsi Anda">Pilih Provinsi Anda</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Bangka Belitung">Bangka Belitung</option>
+                        <option value="Banten">Banten</option>
+                        <option value="Bengkulu">Bengkulu</option>
+                        <option value="Gorontalo">Gorontalo</option>
+                        <option value="Irian Jaya Barat">Irian Jaya Barat</option>
+                        <option value="Jabodetabek">Jabodetabek</option>
+                        <option value="Jambi">Jambi</option>
+                        <option value="Jawa Barat">Jawa Barat</option>
+                        <option value="Jawa Tengah">Jawa Tengah</option>
+                        <option value="Jawa Timur">Jawa Timur</option>
+                        <option value="Kalimantan Barat">Kalimantan Barat</option>
+                        <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                        <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                        <option value="Kalimantan Timur">Kalimantan Timur</option>
+                        <option value="Kepulauan Riau">Kepulauan Riau</option>
+                        <option value="Lampung">Lampung</option>
+                        <option value="Maluku">Maluku</option>
+                        <option value="Maluku Utara">Maluku Utara</option>
+                        <option value="Nangroe Aceh Darussalam">Nangroe Aceh Darussalam</option>
+                        <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                        <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                        <option value="Papua">Papua</option>
+                        <option value="Riau">Riau</option>
+                        <option value="Sulawesi Barat">Sulawesi Barat</option>
+                        <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                        <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                        <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                        <option value="Sulawesi Utara">Sulawesi Utara</option>
+                        <option value="Sumatera Barat">Sumatera Barat</option>
+                        <option value="Sumatera Selatan">Sumatera Selatan</option>
+                        <option value="Sumatera Utara">Sumatera Utara</option>
+                        <option value="Yogyakarta">Yogyakarta</option>
+                    </select>
+                    <label for="Kota">Kota</label><br>
+                    <input type="text" placeholder="Kota"><br>
+                    <label for="Kecamatan">Kecamatan</label><br>
+                    <input type="text" placeholder="Kecamatan"><br>
+                </div>
+                <div>
+                    <label for="Kelurahan">Kelurahan</label><br>
+                    <input type="text" placeholder="Kelurahan"><br>
+                    <label for="Kode Pos">Kode Pos</label><br>
+                    <input type="number" placeholder="Kode Pos"><br>
+                    <label for="Alamat Lengkap">Alamat Lengkap</label><br>
+                    <textarea name="Alamat lengkap" cols="30" rows="2"></textarea><br>
+                    <label for="Info Tambahan">Info Tambahan</label><br>
+                    <textarea name="Info Tambahan" cols="30" rows="2"></textarea><br>
+                </div>
+            </div>
+            <div>
+                <br><br>
+                <button type="button"value="TAMBAH"><b>TAMBAH</b></button>
+            </div>
+            </form>
+            </div>
+    </div>
+    <!-- End of Pembayaran -->
+</body>
+</html>

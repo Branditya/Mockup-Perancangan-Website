@@ -273,3 +273,86 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* Start Pembelian */
+
+.pembelian {
+    background-color: #F4F3F3;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pembelian .keranjang {
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: white;
+    background: #127FE4;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
+    margin-left: auto;
+    margin-right: 100px;
+    width: 100px;
+}
+.pembelian .keranjang:hover{
+    background-color: #127ee4ad;
+}
+.keranjang a  {
+    color: #ffffff;
+}
+.manjang .barang img {
+    width: 205px;
+    height: 160px;
+    border-radius: 20px 20px 0px 0px;
+}
+.manjang .barang {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 15px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
+    
+}
+.manjang .barang a {
+    padding: 6px 60px;
+    border-radius: 15px;
+    color: white;
+    background: #127FE4;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    
+}
+.manjang .barang a:hover {
+    background:blue;
+}
+.manjang .barang p {
+    font-weight: 900;
+    font-size: 14px;
+
+}
+.manjang {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+/* End Pembelian */
+
+/* Start Pembayaran */
+.pembayaran {
+    background-color: #F4F3F3;"
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form {
+    margin: 0 auto;
+    width: 550px;
+    height: 330px;
+    border-radius: 10px;
+
+}
