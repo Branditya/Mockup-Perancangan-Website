@@ -42,83 +42,97 @@
     <div class="pembayaran container">
         <div class="belanja">
             <h1>Keranjang Belanja</h1>
-            <h5>(1 item)</h5>
-            <img src="GAMBAR/barang9.jpg" alt="">
-            <p>Kaos Merc. EMJE Mushroom</p>
-            <p>Rp 69.000 / Kaos</p>
         </div>
         <div class="alamat">
-        <form  method="POST" action="proses.php">
-            <h1>Alamat Pengiriman</h1>
-            <div>    
-                <div>
-                    <label for="Nama Penerima">Nama Penerima</label><br>
-                    <input type="text" placeholder="Nama Penerima"><br>
-                    <label for="No. Handphone">No. Handphone</label><br>
-                    <input type="number" placeholder="No. Handphone"><br>
-                    <label for="Provinsi">Provinsi</label><br>
-                    <select name="Provinsi">Provinsi
-                        <option value="Pilih Provinsi Anda">Pilih Provinsi Anda</option>
-                        <option value="Bali">Bali</option>
-                        <option value="Bangka Belitung">Bangka Belitung</option>
-                        <option value="Banten">Banten</option>
-                        <option value="Bengkulu">Bengkulu</option>
-                        <option value="Gorontalo">Gorontalo</option>
-                        <option value="Irian Jaya Barat">Irian Jaya Barat</option>
-                        <option value="Jabodetabek">Jabodetabek</option>
-                        <option value="Jambi">Jambi</option>
-                        <option value="Jawa Barat">Jawa Barat</option>
-                        <option value="Jawa Tengah">Jawa Tengah</option>
-                        <option value="Jawa Timur">Jawa Timur</option>
-                        <option value="Kalimantan Barat">Kalimantan Barat</option>
-                        <option value="Kalimantan Selatan">Kalimantan Selatan</option>
-                        <option value="Kalimantan Tengah">Kalimantan Tengah</option>
-                        <option value="Kalimantan Timur">Kalimantan Timur</option>
-                        <option value="Kepulauan Riau">Kepulauan Riau</option>
-                        <option value="Lampung">Lampung</option>
-                        <option value="Maluku">Maluku</option>
-                        <option value="Maluku Utara">Maluku Utara</option>
-                        <option value="Nangroe Aceh Darussalam">Nangroe Aceh Darussalam</option>
-                        <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
-                        <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
-                        <option value="Papua">Papua</option>
-                        <option value="Riau">Riau</option>
-                        <option value="Sulawesi Barat">Sulawesi Barat</option>
-                        <option value="Sulawesi Selatan">Sulawesi Selatan</option>
-                        <option value="Sulawesi Tengah">Sulawesi Tengah</option>
-                        <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
-                        <option value="Sulawesi Utara">Sulawesi Utara</option>
-                        <option value="Sumatera Barat">Sumatera Barat</option>
-                        <option value="Sumatera Selatan">Sumatera Selatan</option>
-                        <option value="Sumatera Utara">Sumatera Utara</option>
-                        <option value="Yogyakarta">Yogyakarta</option>
-                    </select><br>
-                    <label for="Kota">Kota</label><br>
-                    <input type="text" placeholder="Kota"><br>
-                    <label for="Kecamatan">Kecamatan</label><br>
-                    <input type="text" placeholder="Kecamatan"><br>
+            <form  method="POST" action="proses.php">
+                <h1>Alamat Pengiriman</h1>
+                <div>    
+                    <div class="left">
+                        <label for="Nama Penerima">Nama Penerima</label><br>
+                        <input type="text" placeholder="Nama Penerima"><br>
+                        <label for="No. Handphone">No. Handphone</label><br>
+                        <input type="number" placeholder="No. Handphone"><br>
+                        <label for="Provinsi">Provinsi</label><br>
+                        <select name="Provinsi">Provinsi
+                            <option value="Pilih Provinsi Anda">Pilih Provinsi Anda</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Bangka Belitung">Bangka Belitung</option>
+                            <option value="Banten">Banten</option>
+                            <option value="Bengkulu">Bengkulu</option>
+                            <option value="Gorontalo">Gorontalo</option>
+                            <option value="Irian Jaya Barat">Irian Jaya Barat</option>
+                            <option value="Jabodetabek">Jabodetabek</option>
+                            <option value="Jambi">Jambi</option>
+                            <option value="Jawa Barat">Jawa Barat</option>
+                            <option value="Jawa Tengah">Jawa Tengah</option>
+                            <option value="Jawa Timur">Jawa Timur</option>
+                            <option value="Kalimantan Barat">Kalimantan Barat</option>
+                            <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                            <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                            <option value="Kalimantan Timur">Kalimantan Timur</option>
+                            <option value="Kepulauan Riau">Kepulauan Riau</option>
+                            <option value="Lampung">Lampung</option>
+                            <option value="Maluku">Maluku</option>
+                            <option value="Maluku Utara">Maluku Utara</option>
+                            <option value="Nangroe Aceh Darussalam">Nangroe Aceh Darussalam</option>
+                            <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                            <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                            <option value="Papua">Papua</option>
+                            <option value="Riau">Riau</option>
+                            <option value="Sulawesi Barat">Sulawesi Barat</option>
+                            <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                            <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                            <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                            <option value="Sulawesi Utara">Sulawesi Utara</option>
+                            <option value="Sumatera Barat">Sumatera Barat</option>
+                            <option value="Sumatera Selatan">Sumatera Selatan</option>
+                            <option value="Sumatera Utara">Sumatera Utara</option>
+                            <option value="Yogyakarta">Yogyakarta</option>
+                        </select><br>
+                        <label for="Kota">Kota</label><br>
+                        <input type="text" placeholder="Kota"><br>
+                        <label for="Kecamatan">Kecamatan</label><br>
+                        <input type="text" placeholder="Kecamatan"><br>
+                    </div>
+                    <div class="right">
+                        <label for="Kelurahan">Kelurahan</label><br>
+                        <input type="text" placeholder="Kelurahan"><br>
+                        <label for="Kode Pos">Kode Pos</label><br>
+                        <input type="number" placeholder="Kode Pos"><br>
+                        <label for="Alamat Lengkap">Alamat Lengkap</label><br>
+                        <textarea name="Alamat lengkap" cols="30" rows="2"></textarea><br>
+                        <label for="Info Tambahan">Info Tambahan</label><br>
+                        <textarea name="Info Tambahan" cols="30" rows="2"></textarea><br>
+                    </div>
                 </div>
                 <div>
-                    <label for="Kelurahan">Kelurahan</label><br>
-                    <input type="text" placeholder="Kelurahan"><br>
-                    <label for="Kode Pos">Kode Pos</label><br>
-                    <input type="number" placeholder="Kode Pos"><br>
-                    <label for="Alamat Lengkap">Alamat Lengkap</label><br>
-                    <textarea name="Alamat lengkap" cols="30" rows="2"></textarea><br>
-                    <label for="Info Tambahan">Info Tambahan</label><br>
-                    <textarea name="Info Tambahan" cols="30" rows="2"></textarea><br>
+                    <br><br>
+                    <button type="button"value="TAMBAH"><b>TAMBAH</b></button>
                 </div>
+            </form>
+        </div>
+        <div class="rincian">
+            <h1>Rincian Pembayaran</h1>
+            <div>
+                <P>Total Belanja</P>
+                <p>Rp 0</p>
             </div>
             <div>
-                <br><br>
-                <button type="button"value="TAMBAH"><b>TAMBAH</b></button>
+                <P>Ongkos Kirim</P>
+                <p>Rp 0</p>
             </div>
-            </form>
+            <div>
+                <P>Total Pembayaran</P>
+                <p>Rp 0</p>
             </div>
-            <div class="rincian">
-                <h1>Rincian Pembayaran</h1>
-
+            <h1>Metode Pembayaran</h1>
+            <div>
+                <p>Nomor Virtual Account</p>
+                <p>80219241010108287</p>
+                <p>Total Pembayaran</p>
+                <p>Rp 0</p>
             </div>
+        </div>
     </div>
     <!-- End of Pembayaran -->
 </body>

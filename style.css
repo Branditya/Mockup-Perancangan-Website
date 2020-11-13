@@ -356,3 +356,37 @@ form {
     border-radius: 10px;
 
 }
+.belanja img {
+    width: 68px;
+    height: 53px;
+}
+.belanja {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.alamat {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.alamat  .left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.alamat  .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.rincian {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
