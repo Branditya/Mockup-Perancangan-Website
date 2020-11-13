@@ -40,19 +40,27 @@
 
     <!-- Start Pembayaran -->
     <div class="pembayaran container">
-        <div class="belanja">
-            <h1>Keranjang Belanja</h1>
+        <div class="keranjang">
+            <div class="belanja">
+                <div class="teks">
+                    <h1>Keranjang Belanja</h1>
+                    <p>(0 item)</p>
+                </div> 
+            </div>
+            <b><p>Subtotal</p>
+            <p>Rp.0</p></b>
         </div>
+        
         <div class="alamat">
             <form  method="POST" action="proses.php">
                 <h1>Alamat Pengiriman</h1>
-                <div>    
+                <div class="inputan">
                     <div class="left">
-                        <label for="Nama Penerima">Nama Penerima</label><br>
-                        <input type="text" placeholder="Nama Penerima"><br>
-                        <label for="No. Handphone">No. Handphone</label><br>
-                        <input type="number" placeholder="No. Handphone"><br>
-                        <label for="Provinsi">Provinsi</label><br>
+                        <label for="Nama Penerima">Nama Penerima</label>
+                        <input type="text" placeholder="Nama Penerima">
+                        <label for="No. Handphone">No. Handphone</label>
+                        <input type="number" placeholder="No. Handphone">
+                        <label for="Provinsi">Provinsi</label>
                         <select name="Provinsi">Provinsi
                             <option value="Pilih Provinsi Anda">Pilih Provinsi Anda</option>
                             <option value="Bali">Bali</option>
@@ -88,50 +96,53 @@
                             <option value="Sumatera Selatan">Sumatera Selatan</option>
                             <option value="Sumatera Utara">Sumatera Utara</option>
                             <option value="Yogyakarta">Yogyakarta</option>
-                        </select><br>
-                        <label for="Kota">Kota</label><br>
-                        <input type="text" placeholder="Kota"><br>
-                        <label for="Kecamatan">Kecamatan</label><br>
-                        <input type="text" placeholder="Kecamatan"><br>
+                        </select>
+                        <label for="Kota">Kota</label>
+                        <input type="text" placeholder="Kota">
+                        <label for="Kecamatan">Kecamatan</label>
+                        <input type="text" placeholder="Kecamatan">
                     </div>
                     <div class="right">
-                        <label for="Kelurahan">Kelurahan</label><br>
-                        <input type="text" placeholder="Kelurahan"><br>
-                        <label for="Kode Pos">Kode Pos</label><br>
-                        <input type="number" placeholder="Kode Pos"><br>
-                        <label for="Alamat Lengkap">Alamat Lengkap</label><br>
-                        <textarea name="Alamat lengkap" cols="30" rows="2"></textarea><br>
-                        <label for="Info Tambahan">Info Tambahan</label><br>
-                        <textarea name="Info Tambahan" cols="30" rows="2"></textarea><br>
+                        <label for="Kelurahan">Kelurahan</label>
+                        <input type="text" placeholder="Kelurahan">
+                        <label for="Kode Pos">Kode Pos</label>
+                        <input type="number" placeholder="Kode Pos">
+                        <label for="Alamat Lengkap">Alamat Lengkap</label>
+                        <textarea name="Alamat lengkap" cols="30" rows="2"></textarea>
+                        <label for="Info Tambahan">Info Tambahan</label>
+                        <textarea name="Info Tambahan" cols="30" rows="2"></textarea>
                     </div>
-                </div>
-                <div>
-                    <br><br>
-                    <button type="button"value="TAMBAH"><b>TAMBAH</b></button>
-                </div>
+                </div>     
+                <button type="button"value="TAMBAH"><b>TAMBAH</b></button>
             </form>
         </div>
         <div class="rincian">
             <h1>Rincian Pembayaran</h1>
-            <div>
+            <div class="kolom">
                 <P>Total Belanja</P>
                 <p>Rp 0</p>
             </div>
-            <div>
+            <div class="kolom">
                 <P>Ongkos Kirim</P>
                 <p>Rp 0</p>
             </div>
-            <div>
+            <div class="kolom"> 
                 <P>Total Pembayaran</P>
                 <p>Rp 0</p>
             </div>
             <h1>Metode Pembayaran</h1>
-            <div>
-                <p>Nomor Virtual Account</p>
-                <p>80219241010108287</p>
-                <p>Total Pembayaran</p>
-                <p>Rp 0</p>
+            <div class="kolombayar">
+                <div class="kiri">
+                    <p>Nomor Virtual Account</p>
+                    <p style="margin-bottom: 10px;"><b>80219241010108287</b></p>
+                    <p>Total Pembayaran</p>
+                    <p style="color: #FF4D00;"><b>Rp 0</b></p>    
+                </div>
+                <div class="kanan">
+                    <img src="GAMBAR/BRIVA.png" alt="">
+                </div>
             </div>
+            <button type="button">Cek Status Pembayaran</button>
         </div>
     </div>
     <!-- End of Pembayaran -->

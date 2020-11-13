@@ -69,7 +69,7 @@ nav.navbar .navigation a:not(:last-child) {
     align-items: center;
     justify-content: center;
 }
-.beranda img {
+.beranda .gambar img {
     height: 382px;
     width: 468px;
     border-radius: 20px 0;
@@ -78,6 +78,13 @@ nav.navbar .navigation a:not(:last-child) {
 .beranda .teks {
     display: flex;
     flex-direction: column;
+}
+.beranda .teks img {
+    width: 158px;
+    height: 100px;
+    margin-left: 170px;
+    position: relative;
+    bottom: -50px;
 }
 .beranda a {
     padding: 6px 40px;
@@ -253,9 +260,7 @@ h3 {
     margin-left: 50px;
     margin-right: 50px;
 }
-.kontak .simbol {
-    
-}
+
 .kontak .simbol .iconify{
     width: 53px;
     height: 53px;
@@ -292,6 +297,9 @@ footer {
     margin-left: auto;
     margin-right: 100px;
     width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .pembelian .keranjang:hover{
     background-color: #127ee4ad;
@@ -346,15 +354,22 @@ footer {
     background-color: #F4F3F3;
     height: 580px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pembayaran h1{
+    font-size: 24px;
 }
 form {
-    margin: 0 auto;
     width: 550px;
     height: 330px;
     border-radius: 10px;
 
+}
+.keranjang {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .belanja img {
     width: 68px;
@@ -362,15 +377,55 @@ form {
 }
 .belanja {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
+    justify-content: space-around;
+    border-radius: 10px;
+    flex-direction: row;
+    width: 407px;
+    height: 483px;
+    background-color: #E7E7E7;
+}
+.belanja .teks {
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 .alamat {
+    margin-top: 50px;
+    width: 407px;
+    height: 314px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+}
+.alamat h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.alamat .inputan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.alamat input {
+    width: 176px;
+    border: none;
+    margin-bottom: 5px;
+}
+.alamat select{
+    width: 176px;
+    border: none;
+    margin-bottom: 5px;
+}
+.alamat textarea {
+    width: 176px;
+    height: 40px;
+    border: none;
+    margin-bottom: 5px;
 }
 .alamat  .left {
     display: flex;
@@ -380,13 +435,86 @@ form {
 }
 .alamat  .right {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    
+}
+.alamat button {
+    background: #127FE4;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0px;
+    width: 373px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.281);
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
 }
 .rincian {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    
+    background-color:  #E7E7E7;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 483px;
+    width: 407px;
+}
+.rincian h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.rincian img {
+    width: 78px;
+    height: 28px;
+}
+.rincian .kolom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 326px;
+    height: 44px;
+    background-color: white;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+}
+.rincian .kolom p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.rincian .kolombayar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 326px;
+    height: 92px;
+    background-color: white;
+    margin: 5px auto 5px auto;
+    border-radius: 10px;
+}
+.rincian .kiri {
+    margin-left: 10px;
+}   
+.rincian .kanan {
+    margin-right: 10px;
+}
+.rincian button {
+    background: #127FE4;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0px;
+    width: 326px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.281);
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.pembayaran button:hover {
+    background-color: #127ee4ad;
 }
