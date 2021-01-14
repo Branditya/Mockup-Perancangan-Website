@@ -7,6 +7,7 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         h1 {
             font-size: 24;
@@ -16,6 +17,56 @@
         h2 {
             font-size: 71px;
             margin-bottom: 20px;
+        }
+        div.logo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px auto 10px auto;
+        }
+        .center-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 400px;
+            height: 480px;
+            background-color: #D6D4D4;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        form div label {
+            margin-left: 42px;
+        }
+        form div input {
+            display: flex;
+            width: 318px;
+            height: 30px;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        .submit {
+            background: #127FE4;
+            color: white;
+            font-size: 18px;
+            padding: 5px 0px;
+            width: 156px;
+            border-radius: 15px;
+            border: none;
+            font-weight: bold;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.281);
+            margin: 20px auto;
+        }
+        a:hover {
+            border-bottom: 2px solid #3593FF
+        }
+        input.submit:hover {
+            background-color: #127ee4ad;
         }
     </style>
 </head>
@@ -32,16 +83,40 @@
                 <a href="#tentang">TENTANG KAMI</a>
                 <a href="#produk">PRODUK</a>
                 <a href="#kontak">KONTAK</a>
-                <a class="navbutton" href="Masuk.html">MASUK</a>
+                <button onclick="masuk()" class="navbutton">MASUK</button>
             </div>  
         </div> 
     </nav>
     <!-- End of Nav -->
 
+    <!-- Start Masuk -->
+    <div class="masuk" >
+        <div class="masuk-content">
+            <form class="container" method="POST" action="data.php">
+                <div class="center-text">
+                    <h2 style="font-family: 'Roboto Slab', serif;font-size: 36px;margin-bottom: 20px; padding-top: 15px;">Masuk</h2>
+                    <p style="margin-bottom: 10px;">Sudah memiliki akun? <span><a style="color: #3593FF;" href="Daftar.html">Kuy Daftar</a></span></p>
+                </div>
+                <div>
+                    <label for="Email">Email</label><br>
+                    <input type="email" placeholder="Masukkan Email">
+                    <label for="Kata Sandi">Kata Sandi</label><br>
+                    <input type="password" placeholder="Masukkan Kata Sandi">
+                    <input class="submit" type="submit" value="MASUK">
+                </div>
+                <div class="center-text">
+                    <a style="color: #3593FF;" href="">Lupa Password</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- End of Masuk -->
+
     <!-- Start Beranda -->
     <div class="beranda container" id="beranda"> 
         <div class="teks container">
-            <img src="GAMBAR/MENJAMUR.png" alt="">
+            <img class="jamur" src="GAMBAR/MENJAMUR.png" alt="">
             <h2 style="width: 400px;">Men<span style="color: white;">Jamur</span> Bersama Kami</h2>
             <p style="width: 430px;">EMJE Mushroom merupakan penyedia bibit dan baglog jamur berkualitas tinggi di 
                 Indonesia, dengan lebih dari 200 petani jamur yang telah mempercayakan bibitnya kepada kami. 
@@ -49,9 +124,23 @@
             <a style="margin-top: 30px;" href="Daftar.html">GABUNG SEKARANG</a>
         </div>
         <div class="gambar container" >
-            <img src="GAMBAR/Gambar beranda.jpg" alt="">
+            <video controls muted loop poster="GAMBAR/Gambar beranda.jpg" src="VIDEO/Bayu Perd - Facebook_8.mp4"></video>
         </div>
     </div>
+    <script>
+        let masuk=document.querySelector('.masuk');
+        let button = document.querySelector('.navbutton');
+        button.addEventListener('click',function(e){
+            masuk.classList.add('show');
+
+        })
+        masuk.addEventListener('click', function() {
+            this.classList.remove('show');
+        });
+        masuk.querySelector('.masuk-content').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    </script>
     <!-- End of Beranda -->
 
     <!-- Start Tentang -->

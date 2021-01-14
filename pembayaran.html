@@ -32,10 +32,44 @@
                 <a href="index.html#tentang">TENTANG KAMI</a>
                 <a href="index.html#produk">PRODUK</a>
                 <a href="index.html#kontak">KONTAK</a>
-                <a class="navbutton" href="Masuk.html">MASUK</a>
+                <button onclick="masuk()" class="navbutton">MASUK</button>
             </div>  
         </div> 
     </nav>
+    <div class="masuk" >
+        <div class="masuk-content">
+            <form class="container" method="POST" action="data.php">
+                <div class="center-text">
+                    <h2 style="font-family: 'Roboto Slab', serif;font-size: 36px;margin-bottom: 20px; padding-top: 15px;">Masuk</h2>
+                    <p style="margin-bottom: 10px;">Sudah memiliki akun? <span><a style="color: #3593FF;" href="Daftar.html">Kuy Daftar</a></span></p>
+                </div>
+                <div>
+                    <label for="Email">Email</label><br>
+                    <input type="email" placeholder="Masukkan Email">
+                    <label for="Kata Sandi">Kata Sandi</label><br>
+                    <input type="password" placeholder="Masukkan Kata Sandi">
+                    <input class="submit" type="submit" value="MASUK">
+                </div>
+                <div class="center-text">
+                    <a style="color: #3593FF;" href="">Lupa Password</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let masuk=document.querySelector('.masuk');
+        let button = document.querySelector('.navbutton');
+        button.addEventListener('click',function(e){
+            masuk.classList.add('show');
+
+        })
+        masuk.addEventListener('click', function() {
+            this.classList.remove('show');
+        });
+        masuk.querySelector('.masuk-content').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    </script>
     <!-- End of Nav -->
 
     <!-- Start Pembayaran -->
