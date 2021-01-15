@@ -94,6 +94,7 @@ button{
 .masuk.show{
     display: block;
     animation: fade .5s forwards;
+    z-index: 1;
 }
 /* End of Masuk */
 
@@ -122,12 +123,10 @@ button{
     width: 158px;
     height: 100px;
     margin-left: 170px;
-
+    position: relative;
     bottom: -50px;
 }
-.jamur .hidden{
-    display: none;
-}
+
 .beranda a {
     padding: 6px 40px;
     border-radius: 15px;
@@ -561,10 +560,28 @@ form {
     background-color: #127ee4ad;
 }
 
-@media (max-width: 550px){
+@media only screen and (max-width: 550px){
+    .container {
+        max-width: 550px;
+    }
     .navbar{
         height: 150px;
     }
+    
+    h2{
+        max-width: 550px;
+        font-size: 30px;
+    }
+
+    .jamur {
+        display: block;
+        width: 127px;
+        height: 80px;
+        margin-left: 185px;
+        bottom: -38px;
+        position: relative;       
+    }
+
     .navbar .container {
         display: flex;
         flex-direction: column;
@@ -581,13 +598,16 @@ form {
     .navbutton{
         width: 90px;
         height: 30px;
+        margin: 0 10px;
     }
     .beranda{
         height: 1000px;
         flex-direction: column;
     }
 
-    .beranda video{
+    .beranda .gambar video{
+        height: 306px;
+        width: 375px;
         margin-top: 30px;
     }
     .tentang{
@@ -615,6 +635,9 @@ form {
     }
     .kelebihan{
         height: 1200px;
+    }
+    .kelebihan h3{
+        font-size: 30px;
     }
     .kelebihan .baris{
         flex-direction: column;
@@ -652,3 +675,4 @@ form {
         margin-right: auto;
     }
 }
+
